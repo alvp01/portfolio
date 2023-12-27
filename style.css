@@ -1,0 +1,10 @@
+body {
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+header, main, footer {
+  width: 100%;
+}
+
+
