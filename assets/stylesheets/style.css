@@ -1,10 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+* {
+  box-sizing: border-box !important;
+  margin: 0;
+}
+
 body {
   width: 100vw;
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-color: #F5F5F5;
+  overflow-x: hidden;
+  font-family: "Public Sans", sans-serif;
+  font-optical-sizing: auto;
 }
 
-header, main, footer {
+.public-sans-font {
+  font-family: "Public Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.source-code-pro-font {
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+}
+
+.wrapper {
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
+header, .main-section, footer {
+  width: 99%;
+}
 
+body header {
+  height: 100px;
+  background-color: #02385A;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 15px;
+}
+body header nav {
+  display: flex;
+  align-items: center;
+}
+body header nav a {
+  color: #F2F3EC;
+  text-decoration: none;
+  font-weight: 800;
+}
+body header nav > :last-child {
+  margin-left: 20px;
+}
+body .main-section {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0;
+}
+body .main-section .about-area {
+  padding: 25px 15px;
+}
+body .main-section .about-area .introduction {
+  font-size: 30px;
+}
+body .main-section .about-area .introduction span {
+  color: #049CBE;
+}
+body .main-section .projects-area {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 15px;
+}
+body .main-section .projects-area .work-project {
+  width: 100%;
+  border-radius: 10px;
+  background-color: #049CBE;
+  height: 500px;
+  margin-bottom: 15px;
+  padding: 20px;
+}
+body .main-section .projects-area .work-project h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+body .main-section .projects-area .work-project .tech-stack {
+  display: flex;
+  margin-bottom: 15px;
+}
+body .main-section .projects-area .work-project .tech-stack p {
+  margin-right: 10px;
+  border: 1px #011928 solid;
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #F5F5F5;
+}
+body .main-section .projects-area .work-project .tech-stack > :last-child {
+  margin-right: 0;
+}
+body .main-section .projects-area .work-project .project-description {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+body .main-section .projects-area .work-project .interactive-buttons {
+  padding-top: 15px;
+}
+body .main-section .projects-area .work-project .interactive-buttons > :first-child {
+  margin-right: 10px;
+}
+body .main-section .projects-area .work-project .interactive-buttons a {
+  text-decoration: none;
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  color: #F5F5F5;
+  font-size: 22px;
+  padding: 10px;
+  background-color: #02385A;
+  border-radius: 5px;
+  border: 1px #011928 solid;
+}
+body .main-section .projects-area > :last-child {
+  margin-bottom: 0;
+}
+body footer {
+  height: 150px;
+  background-color: #03658C;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 15px 25px 25px;
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+}
+body footer .social-media-area {
+  align-self: center;
+  color: #F2F3EC;
+  font-size: 35px;
+}
+body footer .social-media-area a {
+  text-decoration: none;
+  color: #F2F3EC;
+  margin-right: 15px;
+}
+body footer .social-media-area > :last-child {
+  margin-right: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
